@@ -2,7 +2,7 @@ import os
 import discord
 from discord.ext import commands
 
-TOKEN = os.environ["MTU1MTk3MTQ1NjY1MTYzMjczMA.GYMd_B.qPcIjPC-DPpTJs_Q0jn6wZAvVGpGPi3ufe44sQ"]
+TOKEN = os.environ["DISCORD_TOKEN"]
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -23,4 +23,4 @@ async def react(ctx):
     for emoji in ["❌", "❓", "👎"]:
         await msg.add_reaction(emoji)
 
-bot.run(MTU1MTk3MTQ1NjY1MTYzMjczMA.GYMd_B.qPcIjPC-DPpTJs_Q0jn6wZAvVGpGPi3ufe44sQ)
+bot.run(TOKEN)
